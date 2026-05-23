@@ -4,7 +4,8 @@ import { Download, LoaderCircle, Radar, ScanSearch, Server, ShieldAlert, Termina
 
 import { AnimatedCounter, DataTable, GlassCard, LoadingState, PageShell, RiskBadge } from "../components/CyberUI";
 
-const API_URL = "http://localhost:5000";
+const API_URL=
+import.meta.env.VITE_API_URL;
 
 function Scan() {
   const [target, setTarget] = useState("");
